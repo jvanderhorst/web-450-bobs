@@ -13,11 +13,11 @@ config.web.secret = 'topsecret';
  *
  */
 config.database = {};
-config.database.username = '';
-config.database.password = '';
-config.database.port = '';
-config.database.url = '';
-config.database.name = '';
+config.database.username = 'admin';
+config.database.password = 'group4';
+config.database.port = '39243';
+config.database.url = 'ds139243.mlab.com';
+config.database.name = 'bobs-computer-repair';
 
 
 module.exports = config;
