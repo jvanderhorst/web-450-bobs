@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { SecurityQuestionsComponent } from './security-questions/security-questions.component';
+import { ManagementComponent } from './management/management.component';
 
 import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule,
         MatToolbarModule, MatIconModule, MatMenuModule} from '@angular/material';
@@ -13,8 +15,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { HttpClientModule } from '@angular/common/http';
-import { SecurityQuestionsComponent } from './security-questions/security-questions.component';
-import { ManagementComponent } from './management/management.component';
+
 
 
 @NgModule({
