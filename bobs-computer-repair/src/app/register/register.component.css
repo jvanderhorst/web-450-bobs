@@ -1,0 +1,22 @@
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.formGroup button {
+    width: 50%;
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.securityInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
