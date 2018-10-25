@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
-import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatToolbarModule, MatIconModule, MatMenuModule} from "@angular/material";
-import {FlexLayoutModule} from "@angular/flex-layout";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule,
+        MatToolbarModule, MatIconModule, MatMenuModule} from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SecurityQuestionsComponent } from './security-questions/security-questions.component';
+import { ManagementComponent } from './management/management.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    SecurityQuestionsComponent,
+    ManagementComponent
   ],
   imports: [
     BrowserModule,
