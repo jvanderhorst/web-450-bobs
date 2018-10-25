@@ -7,6 +7,8 @@ const logger = require('./helpers/logger');
 const mongoose = require('mongoose');
 const config = require('./helpers/config');
 const homeRouter = require('./routes/home-router');
+const fs = require('fs');
+const rfs = require('rotating-file-stream');
 
 /**
  * MongoDB setup
@@ -34,6 +36,14 @@ app.use('/', express.static(path.join(__dirname, '../dist/nodequiz')));
 app.use(morgan('dev'));
 
 app.use('/api', homeRouter); // wires the homeController to localhost:3000/api
+
+let logDirectory = path.join(__dirname, '../log');
+fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
+
+let accessLogStream = rfs('access.log', {
+  interval: '1d',
+  path: logDirectory
+});
 
 /**
  * Request handler
