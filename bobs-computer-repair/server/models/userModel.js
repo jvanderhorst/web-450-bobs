@@ -1,16 +1,20 @@
 const mongoose = require('mongoose');
   
 const userSchema = new mongoose.Schema({
-    _id: String,
+    userId: String,
     firstName: String,
     lastName: String,
-    phoneNumber: String,
-    address: String,
     email: String,
     username: String,
     password: String,
+    phoneNumber: String,
+    address: String,
+    city: String,
+    state: String,
+    zipCode: Number,    
     dateCreated: {type: Date, default: Date.now },
-    dtaeUpdated: {type: Date, default: Date.now }
+    dateUpdated: {type: Date, default: Date.now },
+    dateDeleted: {type: Date, default: Date.now }
 },
     {collection: 'user'}
 );

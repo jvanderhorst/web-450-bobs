@@ -5,9 +5,11 @@
       <mat-toolbar-row>
         <a [routerLink]="['/']">Bob's</a>
         <div fxFlex></div>
+        <button mat-button>About</button>
+        <button mat-button>Contact</button>
         <!-- User Profile -->
         <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
-          <mat-icon>account_circle</mat-icon>
+          <mat-icon>more_vert</mat-icon>
         </button>
           <mat-menu #menu="matMenu">
             <button mat-menu-item>

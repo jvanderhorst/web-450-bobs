@@ -1,12 +1,12 @@
 <h2>Login</h2>
 <form class="formGroup">
   <mat-form-field>
-    <input matInput placeholder="username">
+    <input type="text" matInput placeholder="username" name="username"  required>
   </mat-form-field>
   <mat-form-field>
-      <input matInput placeholder="password">
+      <input type="password" matInput placeholder="password" name="password"  required>
   </mat-form-field>
-  <button mat-raised-button>Submit</button>
+  <button mat-raised-button (click)="login()">Submit</button>
 </form>
 
 <p>No account <a [routerLink]="['/register']">Register</a> now!</p>
