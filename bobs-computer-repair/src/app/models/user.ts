@@ -15,3 +15,4 @@ export class User {
     dateUpdated: Date;
     dateDeleted: Date;
 }
+
