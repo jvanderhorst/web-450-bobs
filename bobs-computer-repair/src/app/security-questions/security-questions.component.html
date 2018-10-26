@@ -1,66 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <h2>Security Questions</h2>
-        <div class="form">
-        <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">1</button>
-        </div>
-        <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Question One
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Dropdown link</a></li>
-                  <li><a href="#">Dropdown link</a></li>
-                </ul>
-        </div><br><br />
-        <div class="input-group">
-                <span class="input-group-addon" id="sizing-addon2">Answer:</span>
-                <input type="text" class="form-control" placeholder="Enter Here" aria-describedby="sizing-addon2">
-        </div><br><br />
-        <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">2</button>
-        </div>
-        <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Question Two
-                  <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Dropdown link</a></li>
-                  <li><a href="#">Dropdown link</a></li>
-                </ul>
-        </div><br><br />
-        <div class="input-group">
-                <span class="input-group-addon" id="sizing-addon2">Answer:</span>
-                <input type="text" class="form-control" placeholder="Enter Here" aria-describedby="sizing-addon2">
-        </div><br><br />
-        <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default">3</button>
-        </div>
-        <div class="btn-group" role="group">
-                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Question Three
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Dropdown link</a></li>
-                      <li><a href="#">Dropdown link</a></li>
-                    </ul>
-        </div><br><br />
-        <div class="input-group">
-                <span class="input-group-addon" id="sizing-addon2">Answer:</span>
-                <input type="text" class="form-control" placeholder="Enter Here" aria-describedby="sizing-addon2">
-        </div><br><br />
-    </div>
-    </body>
-</html>
-              
+<h2>Security Questions</h2>
+<form class="formGroup">
+<mat-form-field>
+  <select matNativeControl required>
+    <option>Question One</option>
+    <option value="q1a1">What's the name of your first pet?</option>
+    <option value="q1a2">What is your father's middle name?</option>
+    <option value="q1a3">What is your favorite movie?</option>
+  </select>
+</mat-form-field>
+<mat-form-field class="form-full-width">
+        <input matInput placeholder="Your Answer" value=" ">
+</mat-form-field><br />
+
+<mat-form-field>
+   <select matNativeControl required>
+     <option>Question Two</option>
+     <option value="q2a1">Which town did you grow up in?</option>
+     <option value="q2a2">Who was your first grade teacher?</option>
+     <option value="q2a3">What was the name of your high school?</option>
+  </select>
+</mat-form-field>
+<mat-form-field class="form-full-width">
+        <input matInput placeholder="Your Answer" value=" ">
+</mat-form-field><br />
+
+<mat-form-field>
+   <select matNativeControl required>
+      <option>Question Three</option>
+      <option value="q3a1">Where is your favorite place to eat?</option>
+      <option value="q3a2">What is a nickname you have?</option>
+      <option value="q3a3">Who is your favorite singer/artist?</option>
+  </select>
+</mat-form-field>
+<mat-form-field class="form-full-width">
+        <input matInput placeholder="Your Answer" value=" ">
+</mat-form-field><br />
+</form>
+
+<a mat-raised-button="'cancel'" [routerLink]="['/']">Cancel</a>
+<a mat-raised-button [color]="'submit'" [routerLink]="['/']">Submit</a>
