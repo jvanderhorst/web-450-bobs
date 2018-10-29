@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
+.formGroup {
+    background-color: white;
+}
+
 .mat-form-field-empty.mat-form-field-label {
     color:rgb(82, 54, 238);
     position: absolute;

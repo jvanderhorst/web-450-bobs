@@ -1,11 +1,5 @@
-.loginForm {
-    background-color: white;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
+
 .formGroup {
-    color: black;
     display: flex;
     flex-direction: column;
     width: 50%;
