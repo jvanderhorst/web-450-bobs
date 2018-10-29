@@ -1,5 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
+
+.mat-form-field-empty.mat-form-field-label {
+    color:rgb(207, 207, 207);
+}
+
+.mat-form-field-underline {
+    background-color: green;
+    color:blue;
+}
+
+a {
+    color: green;
+}
+
+h2 {
+    background-color: black;
+}
+::ng-deep .mat-form-field{
+    color:red
+}
 
 body{
     background-image: url('./assets/bcrs_image.jpg');
