@@ -5,10 +5,10 @@
       <mat-toolbar-row>
         <a [routerLink]="['/']">Bob's Online Computer Repair</a>
         <div fxFlex></div>
-        <button mat-button>About</button>
-        <button mat-button>Contact</button>
+        <button mat-button class="button1">About</button><br/>
+        <button mat-button class="button2">Contact</button><br />
         <!-- User Profile -->
-        <button class="toolbar__icon-button" [matMenuTriggerFor]="menu" mat-icon-button>
+        <button class="button1" [matMenuTriggerFor]="menu" mat-icon-button>
           <mat-icon>more_vert</mat-icon>
         </button>
           <mat-menu #menu="matMenu">

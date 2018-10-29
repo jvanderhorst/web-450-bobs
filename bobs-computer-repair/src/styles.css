@@ -1,24 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 /*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
-
 .mat-form-field-empty.mat-form-field-label {
-    color:rgb(207, 207, 207);
+    color:rgb(82, 54, 238);
+    position: absolute;
+    right: 40px;
+    left: 60px;
+    width: 300px;
 }
 
 .mat-form-field-underline {
     background-color: green;
     color:blue;
+    position: absolute;
+    right: 40px;
+    left: 60px;
+    width: 300px;
 }
 
 a {
     color: green;
-}
-
-h2 {
-    background-color: black;
-}
-::ng-deep .mat-form-field{
-    color:red
 }
 
 body{
@@ -26,3 +26,28 @@ body{
     background-size: cover;
     background-repeat: none;
 }
+
+.button1 {
+    color: green;
+    font-size: 16px;
+    
+}
+
+.button2 {
+    color: rgb(226, 225, 225);
+    background-color: green;
+    font-size: 16px;
+}
+
+h2 {
+    background-color: rgb(26, 25, 25);
+    text-align: center;
+}
+
+.register {
+ position: absolute;
+ right: 100px;
+ width: 300px;
+}
+
+

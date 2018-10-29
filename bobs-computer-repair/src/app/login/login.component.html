@@ -1,3 +1,4 @@
+<div class="loginForm">
 <h2>Login</h2>
 <form class="formGroup">
   <mat-form-field>
@@ -6,7 +7,10 @@
   <mat-form-field>
       <input type="password" matInput placeholder="password" name="password"  required>
   </mat-form-field><br />
-  <button mat-raised-button (click)="login()">Submit</button>
 </form><br />
+<button class="button" mat-raised-button (click)="login()">Submit</button><br>
+</div>
 
-<p>No account <a [routerLink]="['/register']">Register</a> now!</p>
+<div class="register">
+<p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
+</div>
