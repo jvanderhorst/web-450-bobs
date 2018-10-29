@@ -1,11 +1,27 @@
 .formGroup {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    color: blue;
+    background-color: white;
+    margin: 0 auto;
 }
 
 .formGroup button {
     width: 25%;
+    color: white;
+        background-color: green;
+        font-size: 14px;
+        width: 25%;
+        cursor: pointer;
+        border-radius: 10px;
+        position: relative;
+        left: 250px;
+        bottom: 10px;
+}
+
+.securityQuestions {
+    background-color: white;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .mat-submit {

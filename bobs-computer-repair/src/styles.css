@@ -2,23 +2,27 @@
 /*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
 .formGroup {
     background-color: white;
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .mat-form-field-empty.mat-form-field-label {
     color:rgb(82, 54, 238);
     position: absolute;
-    right: 40px;
-    left: 60px;
-    width: 300px;
+    width: 100%;
 }
 
 .mat-form-field-underline {
     background-color: green;
     color:blue;
     position: absolute;
-    right: 40px;
-    left: 60px;
-    width: 300px;
+    width: 100%;
 }
 
 a {
@@ -45,12 +49,20 @@ body{
 
 h2 {
     background-color: rgb(26, 25, 25);
+    margin: 0 auto;
+    width: 40%;
     text-align: center;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .register {
  position: absolute;
- right: 100px;
+ right: 200px;
  width: 300px;
 }
 
