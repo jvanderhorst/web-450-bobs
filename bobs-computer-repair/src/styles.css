@@ -65,8 +65,10 @@ h2 {
 }
 
 .register {
+ font-size: 30px;
  position: absolute;
- right: 200px;
+ top: 350px;
+ right: 180px;
  width: 300px;
 }
 
