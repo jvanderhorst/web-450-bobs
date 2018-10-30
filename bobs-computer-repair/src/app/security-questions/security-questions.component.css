@@ -5,11 +5,17 @@
 }
 
 .mat-submit {
-    background-color: green;
+    background-color: rgb(68, 170, 68);
     color: #fff;
 }
 
+.mat-cancel {
+    background-color: rgb(68, 170, 68);
+    color: #fff; 
+}
+
 .button {
+        font-size: 16px;
         position: relative;
         left: 200px;
         bottom: 10px;

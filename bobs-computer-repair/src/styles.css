@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-/*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
+body {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 25px;
+}
 .formGroup {
     background-color: white;
     margin: 0 auto;
@@ -13,42 +16,43 @@
 }
 
 .mat-form-field-empty.mat-form-field-label {
-    color:rgb(82, 54, 238);
+    color:#020024;
     position: absolute;
     width: 100%;
 }
 
 .mat-form-field-underline {
-    background-color: green;
-    color:blue;
+    background-color: #177378;
+    color: #12afb5;
     position: absolute;
     width: 100%;
 }
 
 a {
-    color: green;
+    color: red;
 }
 
 body{
-    background-image: url('./assets/bcrs_image.jpg');
+    background-image: url('./assets/bcrs_image2.jpg');
     background-size: cover;
     background-repeat: none;
 }
 
 .button1 {
-    color: green;
+    color: #1d3236;
     font-size: 16px;
     
 }
 
 .button2 {
     color: rgb(226, 225, 225);
-    background-color: green;
+    background-color: #1d3236;
     font-size: 16px;
 }
 
 h2 {
-    background-color: rgb(26, 25, 25);
+    background-color: #19ccd0;
+    color: rgb(58, 57, 57);
     margin: 0 auto;
     width: 60%;
     text-align: center;
