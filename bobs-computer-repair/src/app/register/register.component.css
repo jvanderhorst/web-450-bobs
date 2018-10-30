@@ -7,19 +7,19 @@
 .formGroup button {
     width: 25%;
     color: white;
-        background-color: green;
-        font-size: 14px;
-        width: 25%;
-        cursor: pointer;
-        border-radius: 10px;
-        position: relative;
-        left: 250px;
-        bottom: 10px;
+    background-color: green;
+    font-size: 14px;
+    width: 25%;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    left: 250px;
+    bottom: 10px;
 }
 
 .personalInfo {
-        background-color: white;
-        width: 85%;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
+    background-color: white;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
