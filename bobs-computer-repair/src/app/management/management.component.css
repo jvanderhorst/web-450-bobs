@@ -1,3 +1,6 @@
 table {
+    color: black;
+    background-color: white;
+    opacity: 50%;
     width: 100%;
   }

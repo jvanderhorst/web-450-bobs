@@ -28,6 +28,7 @@
     "@material/select": "^0.40.1",
     "bluebird": "^3.5.2",
     "body-parser": "^1.18.3",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
     "mongoose": "^5.3.4",
