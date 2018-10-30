@@ -3,4 +3,16 @@ table {
     background-color: white;
     opacity: 50%;
     width: 100%;
+    border-radius: 5px;
   }
+
+h3 {
+    color: white;
+    background-color: black;
+    opacity: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
