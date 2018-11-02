@@ -4,6 +4,7 @@ body {
     font-size: 25px;
 }
 .formGroup {
+    color: black;
     background-color: white;
     margin: 0 auto;
     width: 60%;
@@ -15,21 +16,14 @@ body {
     border-bottom-left-radius: 5px;
 }
 
-.mat-form-field-empty.mat-form-field-label {
-    color:#020024;
-    position: absolute;
-    width: 100%;
-}
-
 .mat-form-field-underline {
     background-color: #177378;
-    color: #12afb5;
     position: absolute;
     width: 100%;
 }
 
 a {
-    color: #18128b;
+    color: #1d16a0;
 }
 
 a:hover {
@@ -51,7 +45,7 @@ body{
 
 .button2 {
     color: rgb(226, 225, 225);
-    background-color: #1d3236;
+    background-color: teal;
     font-size: 16px;
 }
 
@@ -67,15 +61,6 @@ h2 {
     padding-left: 40px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-}
-
-.register {
- color: teal;
- font-size: 16px;
- position: absolute;
- top: 350px;
- right: 180px;
- width: 300px;
 }
 
 

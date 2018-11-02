@@ -19,11 +19,13 @@ body {
 
 /*Toolbar*/
 .menu {
+    background-color: rgb(24, 23, 23);
     position: fixed;
     top: 0;
     left: 0;
     width: 100% !important;
 }
+
 .container a {
      text-decoration: none;
      color: #fff;
