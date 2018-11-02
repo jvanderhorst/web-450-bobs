@@ -1,44 +1,41 @@
-
-<div class="Form">
-<h2>Register Here</h2>
+<h2>Register</h2>
 <form class="formGroup">
-  <div class="personalInfo"><br />
-  <mat-form-field>
-    <input matInput placeholder="First name">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Last name">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Email">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Phone number">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Address">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="City">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="State">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Zip code">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Username">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Password">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input matInput placeholder="Confirm password">
-  </mat-form-field><br /><br />
-
-  <button class ="button2" mat-raised-button [routerLink]="[ '/security-questions']">Submit</button>
-  </div><br />
-  
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput placeholder="First name">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Last name">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Email">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Phone number">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Address">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="City">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="State">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Zip code">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Username">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Password">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input matInput placeholder="Confirm password">
+      </mat-form-field><br />
+    </div>
+<button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/management']">Submit</button>
+<br /> <br />
 </form>
-</div>
+<br>

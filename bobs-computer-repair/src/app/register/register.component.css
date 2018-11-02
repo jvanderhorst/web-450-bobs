@@ -1,7 +1,24 @@
 
-.personalInfo {
-    background-color: white;
-    width: 85%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  
+  .mat-form-field-empty.mat-form-field-label {
+    color:#020024;
+    background-color: red;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .register {
+    color: teal;
+    font-size: 16px;
+    position: initial;
+    width: 300px;
+    height: 100px;
+   }

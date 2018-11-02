@@ -40,13 +40,15 @@ body{
 .button1 {
     color: #1d3236;
     font-size: 16px;
+    border: 2px solid #e7e7e7;
     
 }
 
 .button2 {
-    color: rgb(226, 225, 225);
+    color: white;
     background-color: teal;
     font-size: 16px;
+    border: 2px solid #e7e7e7;
 }
 
 h2 {
