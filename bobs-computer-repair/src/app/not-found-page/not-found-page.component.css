@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+/*
+font-family: 'Roboto', sans-serif;
+*/
+
+
+.page-wrapper {
+    background-image: url(../../assets/images/404error-david-kovalenko-414249-unsplash.jpg);
+    background-size: cover;
+    background-repeat: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+}
+
+.message-wrapper {
+    width: 40%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.message h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 20em;
+}
+
+.message h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+}

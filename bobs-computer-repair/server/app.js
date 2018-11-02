@@ -9,6 +9,10 @@ const config = require('./helpers/config');
 const homeRouter = require('./routes/home-router');
 const fs = require('fs');
 const rfs = require('rotating-file-stream');
+const User = require('./models/userModel');
+const cors = require('cors');
+
+
 
 /**
  * MongoDB setup
@@ -34,6 +38,8 @@ app.use(bodyParser.urlencoded({ 'extended': 'false'}));
 app.use(express.static(path.join(__dirname, '../dist/nodequiz')));
 app.use('/', express.static(path.join(__dirname, '../dist/nodequiz')));
 app.use(morgan('dev'));
+app.use(cors());
+
 
 app.use('/api', homeRouter); // wires the homeController to localhost:3000/api
 

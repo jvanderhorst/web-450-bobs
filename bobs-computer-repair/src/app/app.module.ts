@@ -12,12 +12,19 @@ import { ManagementComponent } from './management/management.component';
 import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule,
         MatToolbarModule, MatIconModule, MatMenuModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatSelectModule} from '@angular/material/select';
 
-
 import { HttpClientModule } from '@angular/common/http';
+
+import { AuthService } from './services/auth.service';
+import { UserService } from './services/user.service';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { InternalServerErrorComponent } from './internal-server-error/internal-server-error.component';
+import { ServiceRepairComponent } from './service-repair/service-repair.component';
 
 
 
@@ -28,7 +35,10 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     SecurityQuestionsComponent,
     ManagementComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    NotFoundPageComponent,
+    InternalServerErrorComponent,
+    ServiceRepairComponent
   ],
   imports: [
     BrowserModule,
@@ -44,9 +54,11 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

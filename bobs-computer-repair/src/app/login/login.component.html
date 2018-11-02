@@ -1,12 +1,28 @@
 <h2>Login</h2>
-<form class="formGroup">
+<form class="formGroup" #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
   <mat-form-field>
-    <input type="text" matInput placeholder="username" name="username"  required>
+    <input 
+    #username="ngModel"
+    [(ngModel)]="login.username"
+    type="text" 
+    matInput 
+    placeholder="username" 
+    name="username"  
+    required
+    [ngClass]="{'invalid-textbox' :signInForm.submitted && !username.valid }">
   </mat-form-field><br />
   <mat-form-field>
-      <input type="password" matInput placeholder="password" name="password"  required>
+    <input 
+    #password="ngModel"
+    [(ngModel)]="login.password"
+    type="password" 
+    matInput 
+    placeholder="password" 
+    name="password"  
+    required
+    [ngClass]="{'invalid-textbox' :signInForm.submitted && !username.valid }">
   </mat-form-field><br />
-<button class="button" mat-raised-button (click)="login()">Submit</button><br>
+<button class="button" mat-raised-button type="submit">Submit</button><br>
 </form><br><br>
 
 <div class="register">

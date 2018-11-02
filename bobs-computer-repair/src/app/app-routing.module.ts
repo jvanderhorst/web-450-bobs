@@ -6,6 +6,9 @@ import { RegisterComponent } from './register/register.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { SecurityQuestionsComponent } from './security-questions/security-questions.component';
 import { ManagementComponent } from './management/management.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { InternalServerErrorComponent } from './internal-server-error/internal-server-error.component';
+import { ServiceRepairComponent } from './service-repair/service-repair.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
@@ -13,6 +16,9 @@ const routes: Routes = [
   { path: 'reset-password', component: ResetPasswordComponent },
   { path: 'security-questions', component: SecurityQuestionsComponent },
   { path: 'management', component: ManagementComponent },
+  { path: 'service-repair', component: ServiceRepairComponent },
+  { path: 'not-found-page', component: NotFoundPageComponent },
+  { path: 'internal-server-error', component: InternalServerErrorComponent },
   { path: '**', redirectTo: '' }
 ];
 
