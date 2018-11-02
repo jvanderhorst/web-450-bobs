@@ -22,11 +22,12 @@
         padding-bottom: 10px;
 }
 
-.securityQuestions {
-    background-color: white;
-    color: black;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
+.example-container {
+    display: inline;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 75%;
+  }
+  

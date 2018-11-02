@@ -2,16 +2,16 @@
 <form class="formGroup">
     <div class="example-container">
     <mat-form-field>
-        <input matInput placeholder type="text" value="username">
+    <input matInput placeholder type="text" value="username"><mat-icon>person</mat-icon>
     </mat-form-field><br>
     <mat-form-field>
-        <input matInput placeholder type="text" value="password">
+        <input matInput placeholder type="text" value="password"><mat-icon>vpn_key</mat-icon>
     </mat-form-field><br>
     </div>
 <button class="button2" mat-raised-button (click)="login()">Submit</button><br>
 <br />
     <div class="register">
-        <p>Not a member? <a [routerLink]="['/register']"><b>Register</b></a> now!</p>
+        <p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
     </div>
 </form>
 

@@ -5,7 +5,7 @@
   }
   
   .example-container > * {
-    width: 100%;
+    width: 75%;
   }
   
   .mat-form-field-empty.mat-form-field-label {
