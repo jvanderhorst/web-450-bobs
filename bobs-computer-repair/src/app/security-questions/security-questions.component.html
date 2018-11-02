@@ -11,7 +11,7 @@
   </select>
 </mat-form-field>&nbsp;
 <mat-form-field class="form-full-width">
-        <input matInput placeholder="Your Answer" name=" ">
+        <input matInput placeholder type="text" value="Your Answer">
 </mat-form-field><br />
 <br>
 <mat-form-field>
@@ -23,7 +23,7 @@
   </select>
 </mat-form-field>&nbsp;
 <mat-form-field class="form-full-width">
-        <input matInput placeholder="Your Answer" name=" ">
+        <input matInput placeholder type="text" value="Your Answer">
 </mat-form-field><br />
 <br>
 <mat-form-field>
@@ -35,12 +35,12 @@
   </select>
 </mat-form-field>&nbsp;
 <mat-form-field class="form-full-width">
-        <input matInput placeholder="Your Answer" name=" ">
+      <input matInput placeholder type="text" value="Your Answer">
 </mat-form-field>
 <br>
 </div><br><br>
-<div class="button">
-    <a mat-stroked-button="'cancel'" [routerLink]="['/login']">Cancel</a>&nbsp;
-    <a mat-raised-button [color]="'submit'" [routerLink]="['/management']">Submit</a>
-    </div>
-</form>
+    <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/login']">Cancel</button>&nbsp;
+    <button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/about']">Submit</button>
+<br />
+  </form>
+<br />

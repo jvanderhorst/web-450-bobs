@@ -1,0 +1,39 @@
+h1 {
+    background-color: #12afb5;
+    color: rgb(58, 57, 57);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.topImage {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    object-fit: contain;
+}
+
+.container {
+text-align: center;
+  padding: 10px 20px;
+  object-fit: contain;
+}
+
+.formGroup2 {
+    color: black;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

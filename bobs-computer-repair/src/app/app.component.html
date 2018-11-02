@@ -2,10 +2,10 @@
   <div class="container">
     <mat-toolbar class="menu" role="header" color="primary">
       <mat-toolbar-row>
-        <a [routerLink]="['/']">Bob's Online Computer Repair</a>
+        <a [routerLink]="['/']">Bob's Online Computer Repair Shop</a>
         <div fxFlex></div>
-        <button mat-button class="button1">About Us</button><br/>&nbsp;
-        <button mat-button class="button2">Contact Us</button><br />&nbsp;
+        <button mat-button class="button1" [routerLink]="['/about']">About Us</button><br/>&nbsp;
+        <button mat-button class="button2" [routerLink]="['/contact']">Contact Us</button><br />&nbsp;
         <!-- User Profile -->
         <button class="button1" [matMenuTriggerFor]="menu" mat-icon-button>
           <mat-icon>more_vert</mat-icon>
