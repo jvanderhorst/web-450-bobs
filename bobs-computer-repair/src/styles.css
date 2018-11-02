@@ -29,7 +29,12 @@ body {
 }
 
 a {
+    color: #18128b;
+}
+
+a:hover {
     color: red;
+
 }
 
 body{
@@ -65,7 +70,8 @@ h2 {
 }
 
 .register {
- font-size: 28px;
+ color: teal;
+ font-size: 16px;
  position: absolute;
  top: 350px;
  right: 180px;

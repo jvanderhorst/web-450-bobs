@@ -1,14 +1,15 @@
 <h2>Login</h2>
 <form class="formGroup">
-  <mat-form-field>
-    <input type="text" matInput placeholder="username" name="username"  required>
-  </mat-form-field><br />
-  <mat-form-field>
-      <input type="password" matInput placeholder="password" name="password"  required>
-  </mat-form-field><br />
-<button class="button" mat-raised-button (click)="login()">Submit</button><br>
-</form><br><br>
-
+    <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="username">
+        </mat-form-field><br>
+        <mat-form-field>
+            <input matInput placeholder="password">
+          </mat-form-field><br>
+      </div>
+<button class="button2" mat-raised-button (click)="login()">Submit</button><br>
 <div class="register">
-<p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
-</div>
+    <p>Not a member? <a [routerLink]="['/register']"><b>Register</b></a> now!</p>
+    </div>
+</form><br><br>

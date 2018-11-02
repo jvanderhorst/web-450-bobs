@@ -1,5 +1,4 @@
 .formGroup {
-    color: blue;
     background-color: white;
     margin: 0 auto;
 }
@@ -25,7 +24,9 @@
 
 .securityQuestions {
     background-color: white;
+    color: black;
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
 }
+

@@ -18,6 +18,8 @@ import {MatSelectModule} from '@angular/material/select';
 
 
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -28,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     SecurityQuestionsComponent,
     ManagementComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
