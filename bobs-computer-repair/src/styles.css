@@ -51,6 +51,13 @@ body{
     border: 2px solid #e7e7e7;
 }
 
+.button3 {
+    color: white;
+    background-color: #12afb5;
+    font-size: 16px;
+    border: 2px solid #e7e7e7;
+}
+
 h2 {
     background-color: #12afb5;
     color: rgb(58, 57, 57);
