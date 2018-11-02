@@ -30,10 +30,26 @@ text-align: center;
     background-color: white;
     margin: 0 auto;
     width: 100%;
+    position: initial;
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 10px;
     padding-left: 50px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+h3 {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    margin: 0 auto;
+    width: 60%;
+    position: initial;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
