@@ -4,26 +4,9 @@
       <mat-toolbar-row>
         <a [routerLink]="['/']">Bob's Online Computer Repair Shop</a>
         <div fxFlex></div>
-        <button mat-button class="button1" [routerLink]="['/about']">About Us</button><br/>&nbsp;
-        <button mat-button class="button2" [routerLink]="['/contact']">Contact Us</button><br />&nbsp;
-        <!-- User Profile -->
-        <button class="button1" [matMenuTriggerFor]="menu" mat-icon-button>
-          <mat-icon>more_vert</mat-icon>
-        </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item>
-              <mat-icon>perm_contact_calendar</mat-icon>
-              <span>My Profile</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>settings</mat-icon>
-              <span>Settings</span>
-            </button>
-            <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
-              <span>Logout</span>
-            </button>
-          </mat-menu>
+        <button mat-button class="button2" [routerLink]="['/services']">Services</button><br />&nbsp;&nbsp;
+        <button mat-button class="button1" [routerLink]="['/about']">About Us</button><br/>&nbsp;&nbsp;
+        <button mat-button class="button2" [routerLink]="['/contact']">Contact Info</button><br />&nbsp;&nbsp;
         </mat-toolbar-row>
       </mat-toolbar>
       <!--component view wrapper-->

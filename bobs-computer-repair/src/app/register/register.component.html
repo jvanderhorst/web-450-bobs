@@ -1,42 +1,43 @@
-<h2>Register</h2>
-<form class="formGroup">
+
+<body>
+<h2>Register Here</h2>
     <div class="example-container">
+      <mat-form-field><br>
+       <p>First Name:</p>
+        <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
+       <br /><br>
+       <p>Last Name:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>Email:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>Phone Number:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>Address:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+      </mat-form-field></div>
+      <div class="vl">
+      <div class="example-container2">
       <mat-form-field>
-        <input matInput placeholder type="text" value="First name" data-ng-click="clearSearch()">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Last name">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Email">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Phone number">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Address">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="City">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="State">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Zip code">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Username">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Password">
-      </mat-form-field><br />
-      <mat-form-field>
-        <input matInput placeholder type="text" value="Confirm password">
-      </mat-form-field><br />
-    </div>
-    <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/login']">Cancel</button>&nbsp;
-    <button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/security-questions']">Submit</button>
-<br /> <br />
-</form>
-<br>
+       <p>City:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>State:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>Zip Code:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>Username:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
+       <br /><br>
+       <p>Password:</p>
+       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" /><br /><br>
+       <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/login']">Cancel</button>&nbsp;
+      <button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/security-questions']">Submit</button>
+  </mat-form-field><br /><br>
+    </div></div>
+    </body>
