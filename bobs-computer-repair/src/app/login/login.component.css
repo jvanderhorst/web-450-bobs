@@ -22,3 +22,9 @@
   width: 300px;
   height: 100px;
  }
+
+ .button {
+   text-align: right;
+   font-size: 16px;
+   color: gray;
+ }
