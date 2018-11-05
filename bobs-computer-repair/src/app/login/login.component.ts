@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
+import { AuthService } from '../services/auth.service';
 import { Router } from "@angular/router";
+
 
 @Component({
   selector: 'app-login',
@@ -9,8 +12,9 @@ import { Router } from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
 
-  constructor(private userService: UserService, private router : Router) { }
+  constructor(private authService: AuthService, private router : Router) { }
 
   login = {
     username :'',
@@ -19,11 +23,24 @@ export class LoginComponent implements OnInit {
   serverErrorMessages: string;
 
   ngOnInit() {
-    
+    if(this.authService.isLoggedIn())
+    this.router.navigateByUrl('/service-repair');
+  }
+
+  onSubmit(form : NgForm){
+    this.authService.login(form.value).subscribe(
+      res => {
+        this.authService.setToken(res['token']);
+        this.router.navigateByUrl('/service-repair');
+      },
+      err => {
+        this.serverErrorMessages = err.error.message;
+      }
+    );
   }
  
-  onSubmit(form : NgForm){
+ 
     
-  }
+  
 
 }

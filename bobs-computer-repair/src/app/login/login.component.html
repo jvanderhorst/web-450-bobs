@@ -1,30 +1,39 @@
 <h2>Login</h2>
 <form class="formGroup" #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
-  <mat-form-field>
-    <input 
-    #username="ngModel"
-    [(ngModel)]="login.username"
-    type="text" 
-    matInput 
-    placeholder="username" 
-    name="username"  
-    required
-    [ngClass]="{'invalid-textbox' :signInForm.submitted && !username.valid }">
-  </mat-form-field><br />
-  <mat-form-field>
-    <input 
-    #password="ngModel"
-    [(ngModel)]="login.password"
-    type="password" 
-    matInput 
-    placeholder="password" 
-    name="password"  
-    required
-    [ngClass]="{'invalid-textbox' :signInForm.submitted && !username.valid }">
-  </mat-form-field><br />
-<button class="button" mat-raised-button type="submit">Submit</button><br>
+  <div class="example-container">
+    <mat-form-field>
+      <input 
+      #username="ngModel"
+      [(ngModel)]="login.username"
+      type="text" 
+      matInput 
+      placeholder
+      value="username"
+      name="username"  
+      required
+      >
+      <mat-icon>person</mat-icon>
+    </mat-form-field><br />
+    <mat-form-field>
+      <input 
+      #password="ngModel"
+      [(ngModel)]="login.password"
+      type="password" 
+      matInput 
+      placeholder
+      value="password"
+      name="password"  
+      required
+      >
+      <mat-icon>vpn_key</mat-icon>
+    </mat-form-field><br />
+    <button class="button2" mat-raised-button type="submit" >Submit</button><br><br />
+  </div>
+  <div class="register">
+    <p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
+    </div>
 </form><br><br>
 
-<div class="register">
-<p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
+<div class="alert" *ngIf="serverErrorMessages">
+  {{serverErrorMessages}}
 </div>

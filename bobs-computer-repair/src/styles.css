@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-/*@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';*/
+body {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 25px;
+}
 .formGroup {
+    color: black;
     background-color: white;
     margin: 0 auto;
     width: 60%;
@@ -12,43 +16,51 @@
     border-bottom-left-radius: 5px;
 }
 
-.mat-form-field-empty.mat-form-field-label {
-    color:rgb(82, 54, 238);
-    position: absolute;
-    width: 100%;
-}
-
 .mat-form-field-underline {
-    background-color: green;
-    color:blue;
+    background-color: #177378;
     position: absolute;
     width: 100%;
 }
 
 a {
-    color: green;
+    color: #1d16a0;
+}
+
+a:hover {
+    color: red;
+
 }
 
 body{
-    background-image: url('./assets/bcrs_image.jpg');
+    background-image: url('./assets/bcrs_image2.jpg');
     background-size: cover;
     background-repeat: none;
 }
 
 .button1 {
-    color: green;
+    color: #1d3236;
     font-size: 16px;
+    border: 2px solid #e7e7e7;
     
 }
 
 .button2 {
-    color: rgb(226, 225, 225);
-    background-color: green;
+    color: white;
+    background-color: teal;
     font-size: 16px;
+    border: 2px solid #e7e7e7;
+}
+
+.button3 {
+    color: white;
+    background-color: #12afb5;
+    font-size: 16px;
+    border: 2px solid #e7e7e7;
 }
 
 h2 {
-    background-color: rgb(26, 25, 25);
+    background-color: #12afb5;
+    color: rgb(58, 57, 57);
     margin: 0 auto;
     width: 60%;
     text-align: center;
@@ -60,10 +72,5 @@ h2 {
     border-top-left-radius: 5px;
 }
 
-.register {
- position: absolute;
- right: 200px;
- width: 300px;
-}
 
 

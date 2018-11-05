@@ -1,3 +1,10 @@
-<p>
-  service-repair works!
-</p>
+<div>
+  <form #repairForm="ngForm">
+    
+    <span *ngFor="let repair of repairs">
+    <h1>{{repair.repairName}}</h1>
+    
+    </span>
+    
+  </form>
+</div>

@@ -9,6 +9,4 @@ export class User {
     city: String;
     state: String;
     zipCode: String;
-    
 }
-

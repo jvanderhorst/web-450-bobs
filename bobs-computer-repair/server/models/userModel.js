@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema({
 const User = module.exports = mongoose.model('User', userSchema);
 
 module.exports.getById = (id, callback) => {
-    var query = {userId: id};
+    var query = {_id: id};
     User.findById(query, callback);
 }
 
@@ -35,7 +35,7 @@ module.exports.add = (user,callback) => {
 }
 
 module.exports.getOne = (e, callback) => {
-    var query = {email: e};
+    var query = {username: e};
     User.findOne(query, callback);
 }
 
@@ -44,7 +44,7 @@ userSchema.path('email').validate((val) => {
     return emailRegex.test(val);
 }, 'Invalid e-mail.');
 
-/*userSchema.pre('save', function (next) {
+userSchema.pre('save', function (next) {
     bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(this.password, salt, (err, hash) => {
             this.password = hash;
@@ -64,4 +64,4 @@ userSchema.methods.generateJwt = function () {
     {
         expiresIn: process.env.JWT_EXP
     });
-}*/
+}

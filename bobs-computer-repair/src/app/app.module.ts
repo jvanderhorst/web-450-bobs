@@ -25,6 +25,7 @@ import { UserService } from './services/user.service';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { InternalServerErrorComponent } from './internal-server-error/internal-server-error.component';
 import { ServiceRepairComponent } from './service-repair/service-repair.component';
+import { RoleManagerComponent } from './role-manager/role-manager.component';
 
 
 
@@ -38,7 +39,8 @@ import { ServiceRepairComponent } from './service-repair/service-repair.componen
     ResetPasswordComponent,
     NotFoundPageComponent,
     InternalServerErrorComponent,
-    ServiceRepairComponent
+    ServiceRepairComponent,
+    RoleManagerComponent
   ],
   imports: [
     BrowserModule,
