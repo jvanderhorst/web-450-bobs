@@ -10,33 +10,33 @@
     <option value="q1a2">What is your father's middle name?</option>
     <option value="q1a3">What is your favorite movie?</option>
   </select>
-</mat-form-field>&nbsp;
-<mat-form-field class="form-full-width">
-        <input matInput placeholder type="text" value="Your Answer">
+</mat-form-field>
+<mat-form-field>
+    <input type="text" placeholder="Your Answer" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>        
 </mat-form-field><br />
 <br>
 <mat-form-field>
-   <select matNativeControl required>
+   <select matNativeControl>
      <option>Question Two</option>
      <option value="q2a1">Which town did you grow up in?</option>
      <option value="q2a2">Who was your first grade teacher?</option>
      <option value="q2a3">What was the name of your high school?</option>
   </select>
-</mat-form-field>&nbsp;
-<mat-form-field class="form-full-width">
-        <input matInput placeholder type="text" value="Your Answer">
-</mat-form-field><br />
+</mat-form-field>
+<mat-form-field>
+    <input type="text" placeholder="Your Answer" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
+  </mat-form-field><br />
 <br>
 <mat-form-field>
-   <select matNativeControl required>
+   <select matNativeControl>
       <option>Question Three</option>
       <option value="q3a1">Where is your favorite place to eat?</option>
       <option value="q3a2">What is a nickname you have?</option>
       <option value="q3a3">Who is your favorite singer/artist?</option>
   </select>
-</mat-form-field>&nbsp;
-<mat-form-field class="form-full-width">
-      <input matInput placeholder type="text" value="Your Answer">
+</mat-form-field>
+<mat-form-field>
+    <input type="text" placeholder="Your Answer" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
 </mat-form-field>
 <br>
 </div><br><br>
@@ -44,5 +44,4 @@
     <button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/about']">Submit</button>
   <br /> <br />
   </form>
-  <br>
   </div>
