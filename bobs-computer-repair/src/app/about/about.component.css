@@ -19,6 +19,14 @@ img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     object-fit: fill;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.meetBob {
+    text-align: center;
 }
 
 .container {
@@ -49,17 +57,17 @@ img {
 
 h3 {
     background-color: rgb(24, 23, 23);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
     margin: 0 auto;
-    width: 60%;
+    width: 90%;
     position: initial;
     text-align: center;
     padding-top: 10px;
     padding-right: 40px;
     padding-bottom: 10px;
     padding-left: 40px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 5px;
 }
 
 .icons {
