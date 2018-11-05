@@ -3,10 +3,12 @@
 <form class="formGroup">
     <div class="example-container">
     <mat-form-field>
-    <input matInput placeholder type="text" value="username"><mat-icon>person</mat-icon>
+            <mat-icon>person</mat-icon> &nbsp; 
+            <input type="text" placeholder="Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
     </mat-form-field><br>
     <mat-form-field>
-        <input matInput placeholder type="text" value="password"><mat-icon>vpn_key</mat-icon>
+            <mat-icon>vpn_key</mat-icon> &nbsp; 
+            <input type="text" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
     </mat-form-field><br>
     </div>
 <button class="button2" mat-raised-button (click)="login()">Submit</button><br>

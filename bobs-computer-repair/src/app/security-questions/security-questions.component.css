@@ -1,17 +1,4 @@
-.formGroup {
-    background-color: white;
-    margin: 0 auto;
-}
 
-.mat-submit {
-    background-color: rgb(68, 170, 68);
-    color: #fff;
-}
-
-.mat-cancel {
-    background-color: rgb(68, 170, 68);
-    color: #fff; 
-}
 
 .button {
         font-size: 16px;
@@ -23,11 +10,14 @@
 }
 
 .example-container {
-    display: inline;
-    flex-direction: column;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
+    margin: 0 auto;
   }
   
   .example-container > * {
-    width: 75%;
+    padding-right: 20px;
+    width: 90%;
   }
   
