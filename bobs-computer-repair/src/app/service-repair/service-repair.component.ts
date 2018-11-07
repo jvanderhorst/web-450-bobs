@@ -9,6 +9,9 @@ import { Repair } from '../models/repair';
 })
 export class ServiceRepairComponent implements OnInit {
   repairs: Repair[];
+  recentService = "";
+  private cart = [];
+  
   constructor(private repairService: RepairService) { }
 
   ngOnInit() {
@@ -17,5 +20,14 @@ export class ServiceRepairComponent implements OnInit {
   getAllRepairs(): void {
     this.repairService.getAllRepairs()
     .subscribe(repairs => this.repairs = repairs)
+  }
+
+  selectedService(repair){
+    this.recentService = repair;
+    this.cart.push(repair);
+  }
+
+  removeService(repair, index){
+    this.cart.splice(index, 1);
   }
 }

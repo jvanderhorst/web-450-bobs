@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
-/*
-font-family: 'Roboto', sans-serif;
-*/
-
 .page-wrapper {
     background-image: url(../../assets/images/500error-justin-little-650865-unsplash.jpg);
     background-size: cover;
@@ -29,13 +24,11 @@ font-family: 'Roboto', sans-serif;
 }
 
 .message h1 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 10em;
 }
 
 .message h3 {
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 3em;
 }

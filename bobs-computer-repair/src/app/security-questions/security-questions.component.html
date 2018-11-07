@@ -1,46 +1,49 @@
 <div class="Form">
-    <h2>Security Questions</h2>
-    <form class="formGroup">
-      <div class="securityQuestions"><br />
+  <h2>Security Questions</h2>
+  <form class="formGroup">
+    <h4>Select each question below and provide an answer :</h4>
+    <div class="example-container"><br />
 <mat-form-field>
-  <select matNativeControl required>
-    <option>Question One</option>
-    <option value="q1a1">What's the name of your first pet?</option>
-    <option value="q1a2">What is your father's middle name?</option>
-    <option value="q1a3">What is your favorite movie?</option>
-  </select>
+<select matNativeControl>
+  <option>Question One</option>
+  <option value="q1a1">What's the name of your first pet?</option>
+  <option value="q1a2">What is your father's middle name?</option>
+  <option value="q1a3">What is your favorite movie?</option>
+</select>
 </mat-form-field>
-<mat-form-field class="form-full-width">
-        <input matInput placeholder="Your Answer" name=" ">
+<mat-form-field>
+  <input type="text" placeholder="Your Answer" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>        
 </mat-form-field><br />
 <br>
 <mat-form-field>
-   <select matNativeControl required>
-     <option>Question Two</option>
-     <option value="q2a1">Which town did you grow up in?</option>
-     <option value="q2a2">Who was your first grade teacher?</option>
-     <option value="q2a3">What was the name of your high school?</option>
-  </select>
+ <select matNativeControl>
+   <option>Question Two</option>
+   <option value="q2a1">Which town did you grow up in?</option>
+   <option value="q2a2">Who was your first grade teacher?</option>
+   <option value="q2a3">What was the name of your high school?</option>
+</select>
 </mat-form-field>
-<mat-form-field class="form-full-width">
-        <input matInput placeholder="Your Answer" value=" ">
+<mat-form-field>
+  <input type="text" placeholder="Your Answer" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
 </mat-form-field><br />
 <br>
 <mat-form-field>
-   <select matNativeControl required>
-      <option>Question Three</option>
-      <option value="q3a1">Where is your favorite place to eat?</option>
-      <option value="q3a2">What is a nickname you have?</option>
-      <option value="q3a3">Who is your favorite singer/artist?</option>
-  </select>
+ <select matNativeControl>
+    <option>Question Three</option>
+    <option value="q3a1">Where is your favorite place to eat?</option>
+    <option value="q3a2">What is a nickname you have?</option>
+    <option value="q3a3">Who is your favorite singer/artist?</option>
+</select>
 </mat-form-field>
-<mat-form-field class="form-full-width">
-        <input matInput placeholder="Your Answer" value=" ">
+<mat-form-field>
+  <input type="text" placeholder="Your Answer" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
 </mat-form-field>
 <br>
 </div><br><br>
 <div class="button">
-    <a mat-stroked-button="'cancel'" [routerLink]="['/login']">Cancel</a>&nbsp;
-    <a mat-raised-button [color]="'submit'" [routerLink]="['/services']">Submit</a>
-    </div>
+  <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/login']">Cancel</button>&nbsp;
+  <button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/about']">Submit</button>
+<br /> <br />
+</div>
 </form>
+</div>

@@ -1,30 +1,22 @@
-.formGroup {
-    color: blue;
-    background-color: white;
-    margin: 0 auto;
+
+
+.button {
+    font-size: 16px;
+    position: relative;
+    left: 160px;
+    bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.formGroup button {
-    width: 25%;
-    color: white;
-        background-color: green;
-        font-size: 14px;
-        width: 25%;
-        cursor: pointer;
-        border-radius: 10px;
-        position: relative;
-        left: 250px;
-        bottom: 10px;
+.example-container {
+font-size: 20px;
+padding-top: 10px;
+padding-left: 40px;
+margin: 0 auto;
 }
 
-.securityQuestions {
-    background-color: white;
-    width: 85%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.mat-submit {
-    background-color: green;
-    color: #fff;
+.example-container > * {
+padding-right: 100px;
+width: 100%;
 }

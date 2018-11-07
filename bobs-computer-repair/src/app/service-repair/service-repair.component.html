@@ -1,10 +1,15 @@
-<div>
-  <form #repairForm="ngForm">
-    
-    <span *ngFor="let repair of repairs">
-    <h1>{{repair.repairName}}</h1>
-    
-    </span>
-    
-  </form>
+
+<h2>Available Services</h2>
+<div class="example-container">
+<p>Please select from the following sevices and repairs</p>
+<ul>
+  <li *ngFor="let repair of repairs" (click)="selectedService(repair)">{{repair.repairName}} {{repair.price}}</li>
+</ul>
+<br>
+
+<h2>Selected Services: </h2>
+<br>
+<ul>
+  <li *ngFor="let selectedService of cart"><button (click)="removeService(repair)">delete</button>  {{selectedService.repairName}}: {{selectedService.price}}</li>
+</ul>
 </div>
