@@ -10,30 +10,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">101</th>
-            <td>Mark Jacobs</td>
-            <td>mjacobs@gmail.com</td>
+          <tr *ngFor="let user of users">
+            <th scope="row">{{user.userId}}</th>
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.email}}</td>
             <td>Admin</td>
-            <td>08 January 2018</td>
-          </tr>
-          <tr>
-            <th scope="row">102</th>
-            <td>Otto Wimer</td>
-            <td>owimer@gmail.com</td>
-            <td>Admin</td>
-            <td>04 March 2018</td>
-          </tr>
-          <tr>
-            <th scope="row">103</th>
-            <td>Kathy Hoyt</td>
-            <td>khoyt@gmail.com</td>
-            <td>Standard</td>
-            <td>09 September 2018</td>
+            <td>{{user.dateCreated | date: 'MMM d, y'}}</td>
           </tr>
         </tbody>
       </table>
-
       <form>
         <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/management']">Add User</button>&nbsp;
         <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/management']">Edit User</button>&nbsp;
