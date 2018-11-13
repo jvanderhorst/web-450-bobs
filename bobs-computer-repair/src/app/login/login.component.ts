@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UserService } from '../services/user.service';
+import { AuthService } from '../services/auth.service';
+import { Router } from "@angular/router";
+
 
 @Component({
   selector: 'app-login',
@@ -6,10 +12,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(private authService: AuthService, private router : Router) { }
+
+  login = {
+    username :'',
+    password:''
+  };
+  serverErrorMessages: string;
 
   ngOnInit() {
+    if(this.authService.isLoggedIn())
+    this.router.navigateByUrl('/service-repair');
   }
+
+  onSubmit(form : NgForm){
+    this.authService.login(form.value).subscribe(
+      res => {
+        this.authService.setToken(res['token']);
+        this.router.navigateByUrl('/service-repair');
+      },
+      err => {
+        this.serverErrorMessages = err.error.message;
+      }
+    );
+  }
+ 
+ 
+    
+  
 
 }

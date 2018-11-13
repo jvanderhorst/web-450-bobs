@@ -1,44 +1,119 @@
-
-<body>
 <h2>Register Here</h2>
+  <form class="formGroup" #signUpForm="ngForm" (ngSubmit)="signUpForm.valid && onSubmit(signUpForm)">
     <div class="example-container">
-      <mat-form-field><br>
-       <p>First Name:</p>
-        <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
-       <br /><br>
-       <p>Last Name:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>Email:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>Phone Number:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>Address:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-      </mat-form-field></div>
-      <div class="vl">
-      <div class="example-container2">
       <mat-form-field>
-       <p>City:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>State:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>Zip Code:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>Username:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br>
-       <p>Password:</p>
-       <input type="text" placeholder="Enter Here" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true" />
-       <br /><br />
-       <button class="button1" mat-raised-button (click)="'Submit'" [routerLink]="['/login']">Cancel</button>&nbsp;
-       <button class="button2" mat-raised-button (click)="'Submit'" [routerLink]="['/security-questions']">Submit</button>
-  </mat-form-field>
-    </div></div>
-    </body>
+        <input
+        type="text"
+        #firstName="ngModel"
+        [(ngModel)]="userService.selectedUser.firstName"
+        name="firstName"
+        placeholder="First name" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !firstName.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #lastName="ngModel"
+        [(ngModel)]="userService.selectedUser.lastName"
+        name="lastName"
+        placeholder="Last name" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !lastName.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #email="ngModel"
+        [(ngModel)]="userService.selectedUser.email"
+        name="email"
+        placeholder="email" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #username="ngModel"
+        [(ngModel)]="userService.selectedUser.username"
+        name="username"
+        placeholder="username" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !username.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #password="ngModel"
+        [(ngModel)]="userService.selectedUser.password"
+        name="password"
+        placeholder="password" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !password.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #phoneNumber="ngModel"
+        [(ngModel)]="userService.selectedUser.phoneNumber"
+        name="phoneNumber"
+        placeholder="phone number" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !phoneNumber.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #streetAddress="ngModel"
+        [(ngModel)]="userService.selectedUser.streetAddress"
+        name="streetAddress"
+        placeholder="Street Address" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !streetAddress.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #city="ngModel"
+        [(ngModel)]="userService.selectedUser.city"
+        name="city"
+        placeholder="city" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !city.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #state="ngModel"
+        [(ngModel)]="userService.selectedUser.state"
+        name="state"
+        placeholder="state" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !state.valid }">
+      </mat-form-field><br />
+      <mat-form-field>
+        <input
+        type="text"
+        #zipCode="ngModel"
+        [(ngModel)]="userService.selectedUser.zipCode"
+        name="zipCode"
+        placeholder="zip code" 
+        required
+        [ngClass]="{'invalid-textbox' :signUpForm.submitted && !zipCode.valid }">
+      </mat-form-field><br />
+  </div> 
+  
+    <button class="button1" mat-raised-button type="submit">Register</button>
+    <br />
+    
+    <div class="success" *ngIf="showSucessMessage">
+      Saved successfully
+    </div>
+    
+    <!--Error message-->
+    <div class="alert" *ngIf="serverErrorMessages">
+      {{serverErrorMessages}}
+    </div>
+
+  </form>
+  

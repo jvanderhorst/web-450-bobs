@@ -1,19 +1,40 @@
 <br />
 <h2>Login</h2>
-<form class="formGroup">
-    <div class="example-container">
+<form class="formGroup" #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
+  <div class="example-container">
     <mat-form-field>
-            <mat-icon>person</mat-icon> &nbsp; 
-            <input type="text" placeholder="Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
-    </mat-form-field><br>
+      <input 
+      #username="ngModel"
+      [(ngModel)]="login.username"
+      type="text" 
+      matInput 
+      placeholder
+      value="username"
+      name="username"  
+      required
+      >
+      <mat-icon>person</mat-icon> &nbsp; 
+    </mat-form-field><br />
     <mat-form-field>
-            <mat-icon>vpn_key</mat-icon> &nbsp; 
-            <input type="text" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Here'" required="true"/>
-    </mat-form-field><br>
+      <input 
+      #password="ngModel"
+      [(ngModel)]="login.password"
+      type="password" 
+      matInput 
+      placeholder
+      value="password"
+      name="password"  
+      required
+      >
+      <mat-icon>vpn_key</mat-icon> &nbsp; 
+    </mat-form-field><br />
+    <button class="button2" mat-raised-button type="submit" >Submit</button><br><br />
+  </div>
+  <div class="register">
+    <p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
     </div>
-    <div class="button">
-                <button class="button2" mat-raised-button (click)="login()">Submit</button><br>
-        <p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
-    </div>
-</form>
+</form><br><br>
 
+<div class="alert" *ngIf="serverErrorMessages">
+  {{serverErrorMessages}}
+</div>
