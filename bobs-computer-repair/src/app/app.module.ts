@@ -20,7 +20,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { AmtTotalComponent } from './amt-total/amt-total.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -32,10 +33,12 @@ import { ContactComponent } from './contact/contact.component';
     ManagementComponent,
     ResetPasswordComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    AmtTotalComponent
   ],
   imports: [
     BrowserModule,
+    ChartsModule,
     AppRoutingModule,
     HttpClientModule,
     MatCardModule,

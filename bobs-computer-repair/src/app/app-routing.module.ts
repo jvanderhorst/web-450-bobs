@@ -8,9 +8,11 @@ import { SecurityQuestionsComponent } from './security-questions/security-questi
 import { ManagementComponent } from './management/management.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { AmtTotalComponent} from './amt-total/amt-total.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
+  { path: 'amt-total', component: AmtTotalComponent},
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'management', component: ManagementComponent },
