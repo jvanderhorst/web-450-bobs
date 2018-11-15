@@ -16,6 +16,7 @@ import { InternalServerErrorComponent } from './internal-server-error/internal-s
 import { ServiceRepairComponent } from './service-repair/service-repair.component';
 import { RoleManagerComponent } from './role-manager/role-manager.component';
 import { LogFileComponent } from './log-file/log-file.component';
+import { AmtTotalComponent } from './amt-total/amt-total.component';
 
 import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule,
         MatToolbarModule, MatIconModule, MatMenuModule} from '@angular/material';
@@ -46,7 +47,7 @@ import { QuestionManagerComponent } from './question-manager/question-manager.co
     ResetPasswordComponent,
     AboutComponent,
     ContactComponent,
-
+    AmtTotalComponent,
     NotFoundPageComponent,
     InternalServerErrorComponent,
     ServiceRepairComponent,
