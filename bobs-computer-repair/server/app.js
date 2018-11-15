@@ -43,8 +43,8 @@ let accessLogStream = rfs('access.log', {
  */
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ 'extended': 'false'}));
-app.use(express.static(path.join(__dirname, '../dist/nodequiz')));
-app.use('/', express.static(path.join(__dirname, '../dist/nodequiz')));
+app.use(express.static(path.join(__dirname, '../dist/bobs-computer-repair')));
+app.use('/', express.static(path.join(__dirname, '../dist/bobs-computer-repair')));
 app.use(morgan('combined', {stream: accessLogStream}));
 app.use(cors());
 
