@@ -4,6 +4,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { UserService } from '../services/user.service';
 import { AuthService } from '../services/auth.service';
 import { Router } from "@angular/router";
+import { first } from 'rxjs/operators';
 
 
 @Component({
@@ -12,8 +13,7 @@ import { Router } from "@angular/router";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  
-
+ 
   constructor(private authService: AuthService, private router : Router) { }
 
   login = {
@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
     password:''
   };
   serverErrorMessages: string;
+  user: any;
 
   ngOnInit() {
     if(this.authService.isLoggedIn())
@@ -38,9 +39,4 @@ export class LoginComponent implements OnInit {
       }
     );
   }
- 
- 
-    
-  
-
 }

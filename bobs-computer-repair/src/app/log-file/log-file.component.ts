@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+
 @Component({
   selector: 'app-log-file',
   templateUrl: './log-file.component.html',
@@ -11,11 +12,12 @@ export class LogFileComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.getLog
   }
 
-  /*getLog(){
-    this.http.get('../log/access.log').subscribe(data => { 
-      console.log(data.text()); 
-    }
-  }*/
+  getLog(){
+    this.http.get('/api/log').subscribe(data => { 
+      console.log(data)
+    });
+  }
 }

@@ -1,30 +1,36 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-//import { AuthService } from '../services/auth.service';
+import { AuthService } from '../services/auth.service';
 import { User } from '../models/user';
-import { UserService } from '../services/user.service';
+//import { UserService } from '../services/user.service';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { QuestionService } from '../services/question.service';
+import { Question } from '../models/question';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
-  providers: [UserService]
+  providers: [AuthService]
 })
 export class RegisterComponent implements OnInit {
   emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   showSucessMessage: boolean;
   serverErrorMessages: string;
-
-  constructor(private userService: UserService) {}
+  questions: Question[];
+  
+  constructor(
+    private authService: AuthService,
+    private questionService: QuestionService
+    ) {}
 
   ngOnInit() {
-    
+    this.getAllQuestions();
   }
 
   onSubmit(form: NgForm) {
-    this.userService.postUser(form.value).subscribe(
+    this.authService.postUser(form.value).subscribe(
       res => {
         this.showSucessMessage = true;
         setTimeout(() => this.showSucessMessage = false, 4000);
@@ -40,21 +46,47 @@ export class RegisterComponent implements OnInit {
     );
   }
 
+  /*checkPasswords(form: NgForm){
+    let password = group.controls.password.value;
+    let confirmPassword = group.controls.confirmPassword.value;
+
+    return password === confirmPassword ? null : { notSame: true }
+  }*/
+
   resetForm(form: NgForm) {
-    this.userService.selectedUser = {
+    this.authService.selectedUser = {
       firstName: '',
       lastName: '',
       email: '',
-      username: '',
-      password: '',
       phoneNumber: '',
       streetAddress: '',
       city: '',
       state: '',
-      zipCode: '' 
+      zipCode: '',
+      username: '',
+      password: '',
+      confirmPassword: '',
+      questionOne: {
+        questionName: '',
+        answer: ''
+      },
+      questionTwo: {
+        questionName: '',
+        answer: ''
+      },
+      questionThree: {
+        questionName: '',
+        answer: ''
+      },
+      role: 'standard'
     };
     form.resetForm();
     this.serverErrorMessages = '';
+  }
+
+  getAllQuestions(): void {
+    this.questionService.getAllQuestions()
+    .subscribe(questions => this.questions = questions)
   }
 
 }

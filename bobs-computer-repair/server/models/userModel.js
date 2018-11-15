@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const Question = require('../models/questionModel');
+const Role = require('../models/roleModel');
   
 const userSchema = new mongoose.Schema({
     userId: String,
@@ -14,9 +16,12 @@ const userSchema = new mongoose.Schema({
     city: String,
     state: String,
     zipCode: String,    
+    questionOne: {type: mongoose.Schema.Types.Mixed, ref: Question},
+    questionTwo: {type: mongoose.Schema.Types.Mixed, ref: Question},
+    questionThreee: {type: mongoose.Schema.Types.Mixed, ref: Question},
+    role: {type: mongoose.Schema.Types.Mixed, ref: Role},
     dateCreated: {type: Date, default: Date.now },
     dateUpdated: {type: Date, default: Date.now },
-    dateDeleted: {type: Date, default: Date.now },
     saltSecret: String
     
 },

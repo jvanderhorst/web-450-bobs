@@ -4,9 +4,17 @@
       <mat-toolbar-row>
         <a [routerLink]="['/']">Bob's Online Computer Repair Shop</a>
         <div fxFlex></div>
-        <button mat-button class="button2" [routerLink]="['/services']">Services</button><br />&nbsp;&nbsp;
+        <button *ngIf="authService.isLoggedIn()" mat-button class="button1" [matMenuTriggerFor]="manage">Manage</button><br />&nbsp;&nbsp;
+        <mat-menu #manage="matMenu">
+            <button mat-menu-item [routerLink]="['/management']">Users</button>
+            <button mat-menu-item [routerLink]="['/question-manager']">Questions</button>
+            <button mat-menu-item [routerLink]="['/role-manager']">Roles</button>
+            <button mat-menu-item [routerLink]="['/log-file']">Logs</button>
+        </mat-menu>
+        <button mat-button class="button2" [routerLink]="['/service-repair']">Services</button><br />&nbsp;&nbsp;
         <button mat-button class="button1" [routerLink]="['/about']">About Us</button><br/>&nbsp;&nbsp;
         <button mat-button class="button2" [routerLink]="['/contact']">Contact Info</button><br />&nbsp;&nbsp;
+        <button *ngIf="authService.isLoggedIn()" mat-button class="button1" (click)="logout()">Log Out</button><br />&nbsp;&nbsp;
         </mat-toolbar-row>
       </mat-toolbar>
       <!--component view wrapper-->

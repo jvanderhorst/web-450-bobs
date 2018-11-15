@@ -32,7 +32,8 @@
   </div>
   <div class="register">
     <p>Not a member? <a [routerLink]="['/register']">Register</a> now!</p>
-    </div>
+    <p>Forgot password? <a [routerLink]="['/security-questions']">Recover</a> here!</p>
+  </div>
 </form><br><br>
 
 <div class="alert" *ngIf="serverErrorMessages">
