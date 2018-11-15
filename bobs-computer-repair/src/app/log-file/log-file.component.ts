@@ -20,4 +20,5 @@ export class LogFileComponent implements OnInit {
       console.log(data)
     });
   }
+
 }

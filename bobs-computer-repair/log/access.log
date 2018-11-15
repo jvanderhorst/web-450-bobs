@@ -3,11 +3,6 @@
 ::ffff:127.0.0.1 - - [07/Nov/2018:03:06:39 +0000] "GET /api/repair HTTP/1.1" 304 - "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [08/Nov/2018:01:32:07 +0000] "POST /api/login HTTP/1.1" 200 172 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [08/Nov/2018:01:32:07 +0000] "GET /api/repair HTTP/1.1" 304 - "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
-<<<<<<< HEAD
-::ffff:127.0.0.1 - - [08/Nov/2018:01:44:34 +0000] "POST /api/login HTTP/1.1" 200 172 "http://localhost:4200/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
-::ffff:127.0.0.1 - - [08/Nov/2018:01:44:35 +0000] "GET /api/repair HTTP/1.1" 304 - "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
-::ffff:127.0.0.1 - - [08/Nov/2018:01:44:55 +0000] "GET /api/role HTTP/1.1" 200 368 "http://localhost:4200/role-manager" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
-=======
 ::ffff:127.0.0.1 - - [08/Nov/2018:01:58:52 +0000] "GET /api/user HTTP/1.1" 304 - "http://localhost:4200/management" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [08/Nov/2018:02:04:52 +0000] "GET /api/repair HTTP/1.1" 304 - "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
 ::ffff:127.0.0.1 - - [08/Nov/2018:02:06:34 +0000] "GET /api/repair HTTP/1.1" 304 - "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
@@ -858,4 +853,3 @@
 ::ffff:127.0.0.1 - - [15/Nov/2018:01:48:05 +0000] "GET /api/question HTTP/1.1" 304 - "http://localhost:4200/question-manager" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 ::ffff:127.0.0.1 - - [15/Nov/2018:01:48:09 +0000] "GET /api/profile HTTP/1.1" 404 9 "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
 ::ffff:127.0.0.1 - - [15/Nov/2018:01:48:09 +0000] "GET /api/repair HTTP/1.1" 304 - "http://localhost:4200/service-repair" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36"
->>>>>>> dev

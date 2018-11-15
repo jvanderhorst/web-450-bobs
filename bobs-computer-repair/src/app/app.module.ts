@@ -20,7 +20,7 @@ import { LogFileComponent } from './log-file/log-file.component';
 import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule,
         MatToolbarModule, MatIconModule, MatMenuModule} from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -29,6 +29,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 
 
 import { HttpClientModule } from '@angular/common/http';
+
 
 import { AuthService } from './services/auth.service';
 import { UserService } from './services/user.service';
@@ -45,6 +46,7 @@ import { QuestionManagerComponent } from './question-manager/question-manager.co
     ResetPasswordComponent,
     AboutComponent,
     ContactComponent,
+
     NotFoundPageComponent,
     InternalServerErrorComponent,
     ServiceRepairComponent,
