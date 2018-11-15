@@ -1,4 +1,4 @@
-<h2>Register Here</h2>
+<h2>Create New Role</h2>
   <form class="formGroup" #addRoleForm="ngForm" (ngSubmit)="addRoleForm.valid && onSubmit(addRoleForm)">
     <div class="example-container">
       <mat-form-field>
@@ -54,6 +54,8 @@
             <th scope="row">{{role.roleId}}</th>
             <td>{{role.roleName}}</td>
             <td>{{role.dateUpdated | date: 'MMM d, y'}}</td>
+            <td><button (click)="onDelete(role.roleId, addRoleForm)"><mat-icon>delete</mat-icon></button></td>
+            <td><button (click)="onEdit(role)"><mat-icon>edit</mat-icon></button></td>
           </tr>
         </tbody>
       </table>

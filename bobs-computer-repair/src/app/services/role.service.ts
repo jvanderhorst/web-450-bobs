@@ -12,6 +12,8 @@ export class RoleService {
     roleName: ''
     };
 
+  roles: Role[];
+
   constructor(private http: HttpClient) { }
 
   //get all roles
@@ -21,5 +23,13 @@ export class RoleService {
 
   postRole(role: Role){
     return this.http.post('/api/addRole', role);
+  }
+
+  deleteRole(roleId: string) {
+    return this.http.delete('/api/removeRole/:roleId');
+  }
+
+  updateRole(role: Role) {
+    return this.http.put('/api/updateRole/:roleId', role)
   }
 }

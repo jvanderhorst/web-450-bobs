@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const questionSchema = new mongoose.Schema({
     questionId: String,
     questionName: String,
+    answer: String,
     dateUpdated: {type: Date, default: Date.now },
 },
     {collection: 'security-questions'}
